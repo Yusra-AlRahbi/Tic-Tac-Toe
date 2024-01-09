@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+    <!--MODEL AND ALERT-->
+    <div class="background">
+        <div class="model" id="start">
+            <button class="btn" id ="Xbtn">X</button>
+            <span>   OR   </span>
+            <button class="btn" id="Obtn">O</button>
+        </div>
+        <div class="model" id="winner-model">
+            <span class="close-btn">X</span>
+            <p class="status"></p>
+        </div>
+        <div class="model" id="restart-model">
+            <span class="close-btn">X</span>
+            <p>Are you sure to restart the game ?!</p>
+            <button class="yesBtn">YES</button>
+            <button class="noBtn">NO</button>
+        </div>
+      </div>    
+      <!--\\MODEL AND ALERT\\-->
+    <div class="allContent"> 
+           <!--WINNER  BORD-->
+         <div class="winnerBord">
+            <h1>You :  <span class="numUserWin">0</span></h1>
+            <h1>Computer :  <span class="numCompWin">0</span> </h1>
+          </div>
+           <!--\\WINNER  BORD\\-->
+        <div class="MainContent">
+            <div class="header-and-board-wrapper">
+              <!--Top Header-->
+              <div class="header">
+                  <h2 id="instruction">
+                      X Turn
+                  </h2>
+              </div>
+              <!--  \\Top Header\\  -->
+
+              <!--BOARD-->
+              <div class="gridContainer">
+                  <!--ROW 1-->
+                  <div class="square" value="0"  style="border-top: none; border-left: none;">
+                      <h3 class="square-content">
+                          
+                      </h3>
+                  </div>
+                  <div class="square" value="1" style="border-top: none;">
+                      <h3 class="square-content">
+                          
+                      </h3>
+                  </div>
+                  <div class="square" value="2" style="border-top: none; border-right: none;">
+                      <h3 class="square-content">
+                          
+                      </h3>
+                  </div>
+                  <!--ROW 2-->
+                  <div class="square" value="3" style="border-left: none;">
+                      <h3 class="square-content">
+                          
+                      </h3>
+                  </div>
+                  <div class="square" value="4">
+                      <h3 class="square-content">
+                          
+                      </h3>
+                  </div>
+                  <div class="square" value="5" style="border-right: none;">
+                      <h3 class="square-content">
+                          
+                      </h3>
+                  </div>
+                  <!--ROW 3-->
+                  <div class="square" value="6" style="border-bottom: none; border-left: none;">
+                      <h3 class="square-content">
+                          
+                      </h3>
+                  </div>
+                  <div class="square" value="7" style="border-bottom: none;">
+                    <h3 class="square-content">
+                          
+                      </h3>
+                  </div>
+                  <div class="square" value="8" style="border-bottom: none; border-right: none;">
+                      <h3 class="square-content">
+                          
+                      </h3>
+                  </div>
+              </div>
+              <!--\\BOARD\\-->
+              <!--FOOTER-->
+              <div class="footer">
+                <button class="action-btn" id="reset-btn">
+                    Reset
+                </button>
+                <button class="action-btn" id ="restart-btn">
+                    RESTART !
+                </button>
+              </div>
+              <!--\\FOOTER\\-->
+          </div>
+      </div>
+    </div>
+  <footer>
+    <p>Developed by Yusra AlRahbi</p>
+  </footer>
+</body>
+<script src="logic.js"></script>
+</html>
